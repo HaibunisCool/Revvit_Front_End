@@ -1,37 +1,31 @@
-html {
-    height: 100%;
+$footer-height: 100px;
+
+.body {
+    position: relative;
+    height:auto;
+    min-height: 200%;
     box-sizing: border-box;
 }
 
 
-
-.body-for-sticky {
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 6rem;
-}
-
-.sticky-footer {
-    position: inherit;
-    bottom: 0;
-}
-
 /* for the rendering */
 
 body {
+    position: relative;
     margin: 0;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    padding-bottom: $footer-height;
 }
 
-.footer {
-    height: 100px;
-    right: 0;
-    left: 0;
-    padding: 1rem;
+footer {
+    position:absolute;
+    height: $footer-height;
+    width: 100%;
+    bottom:0;
     background-color: #efefef;
     text-align: center;
 }
 
-.no-overlap{
-    margin-top: 100px;
-}
+// .no-overlap{
+//     margin-top: 200px;
+// }
