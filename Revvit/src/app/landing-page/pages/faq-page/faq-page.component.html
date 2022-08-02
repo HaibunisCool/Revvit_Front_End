@@ -1,65 +1,80 @@
 
 
-<app-landing-nav></app-landing-nav>
+  <app-landing-nav></app-landing-nav>
 
-
-<body>
-  <div>
-    <div class="card shadow-lg">
-        <div class="card-header text-center">
+<body style="background-color: #F84343;">
+  <div class="title-bkg">
+  <header>
+        <div class="card-header">
             Frequently Asked Questions
         </div>
+  </header>
+  </div>
+
+
+
+<div class="accordion-bkg">
+
+  <div class="accordion" id="faqs">
+    <div class="accordion-item">
+      <h2 class="question" id="headingOne">
+        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Why does Revvit exist?
+        </button>
+      </h2>
+
+    <div id="collapseOne" class="accordian-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+      <div class="answer">
+          We were just in a silly goofy mood that's all  
+      </div>
     </div>
   </div>
 
-  <div id="accordion">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-bs-toggle="collapse" 
-          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            FAQ question #1
-          </button>
-        </h5>
+  <div class="accordion-item">
+    <h2 class="question" id="headingTwo">
+      <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        Who are the creators of Revvit?
+      </button>
+    </h2>
+
+  <div id="collapseTwo" class="accordian-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+    <div class="answer">
+      Ethan, Alec, Victoria, Ryan, Hai, Eric, Hal, Tylar, Will, Matthew, Brayan, Rayshaun
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="question" id="headingThree">
+    <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+      How do I submit a question?
+    </button>
+  </h2>
+
+<div id="collapseThree" class="accordian-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+  <div class="answer">
+    Down below, but not sure if we gon keep that part
+  </div>
+</div>
+</div>
+
+</div>
+
+  </div>
+
+  <div class="submitting">
+    <form class="entire-form">
+      <div class="form-group">
+        <label>
+          Want to submit a question? Me too..
+        </label>
+        <input class="form-control" type="text" placeholder="Type your question here... (needs work)">       
       </div>
+      <button type="button" class="btn btn-outline-danger" style="color: black;">Submit</button>
+    </form>
+  </div>
   
-      <div id="collapseOne" class="accordian-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            FAQ question #2
-          </button>
-        </h5>
-      </div>
-      <div id="collapseTwo" class="accordian-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            FAQ question #3
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="accordian-collapse collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="divider shadow-lg">
+  <div class="divider shadow-lg" style="background-color: white;">
     <h1 class="text-center">This is a divider</h1>
   </div>
 </body>
