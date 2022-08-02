@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lora', serif;
+    background-color: #282828;
+}
+
+.logo {
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+button:hover {
+    color: darkslategrey;
+}
+
+.links {
+    display: inline-block;
+}
+
+li,
+a {
+    font-weight: 500;
+    font-size: 19px;
+    color: rgba(69, 69, 83);
+    text-decoration: none;
+}
+
+.links a:hover {
+    animation: bounce .5s ease-in infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        transform: translateY(-7px);
+    }
+}
+
+nav li {
+    border-right: 1px solid #000;
+}
+
+
+.navbar-inner {
+    position: relative;
+    left: -48%;
+}
+
+.navbar .navbar-inner {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: white;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham7 .top {
+    stroke-dasharray: 40 82;
+}
+
+.ham7 .middle {
+    stroke-dasharray: 40 111;
+}
+
+.ham7 .bottom {
+    stroke-dasharray: 40 161;
+}
+
+.ham7.active .top {
+    stroke-dasharray: 17 82;
+    stroke-dashoffset: -62px;
+}
+
+.ham7.active .middle {
+    stroke-dashoffset: 23px;
+}
+
+.ham7.active .bottom {
+    stroke-dashoffset: -83px;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
