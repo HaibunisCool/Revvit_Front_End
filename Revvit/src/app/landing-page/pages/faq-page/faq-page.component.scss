@@ -1,0 +1,37 @@
+/* Frequently Asked Questions - button */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+*{
+    font-family: Roboto;
+}
+$main-color: linear-gradient(0deg, #F84343, #F84343),#F53A3A;
+
+
+.faq{position: absolute;
+width: 1211px;
+height: 174px;
+left: 118px;
+top: 33px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 100.02%;
+/* or 96px */
+
+text-align: center;
+}
+
+.titlecard{
+    box-sizing: border-box;
+
+position: absolute;
+width: 1440px;
+height: 241px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
