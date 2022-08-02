@@ -12,4 +12,14 @@ export class LandingNavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+    hamClick($event: any) {
+    let clickedElement = document.querySelector('.ham');
+
+
+    console.log(clickedElement)
+
+
+        clickedElement!.classList.toggle('active');
+      }
+
 }

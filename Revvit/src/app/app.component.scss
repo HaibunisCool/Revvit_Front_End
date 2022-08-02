@@ -1,0 +1,37 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.body-for-sticky {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 6rem;
+}
+
+.sticky-footer {
+    position: inherit;
+    bottom: 0;
+}
+
+/* for the rendering */
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.footer {
+    height: 100px;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.no-overlap{
+    margin-top: 100px;
+}
