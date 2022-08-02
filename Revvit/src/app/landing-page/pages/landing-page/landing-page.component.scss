@@ -5,7 +5,7 @@
 
 
 // ### Variable ###
-$main-color: linear-gradient(0deg, #F84343, #F84343),#F53A3A;
+$main-color: #F84343;
 
 
 svg{
@@ -16,6 +16,7 @@ svg{
     margin: auto auto;
     text-align: left;
     position: relative;
+    height: 40%;
 
     h1{
         font-weight: 400;
@@ -32,7 +33,6 @@ svg{
 
     button{
         display: flex;
-        margin: 0 auto;
         background-color: #F84343;
         border-color: #F84343;
         display: block;
@@ -76,56 +76,65 @@ svg{
 }
 
 .divider{
-    background-color: #F84343;
-    margin-top: 30px;
-}
-
-html {
-    height: 100%;
-    /* for the page to take full window height */
-    box-sizing: border-box;
-    /* to have the footer displayed at the bottom of the page without scrolling */
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-    /* enable the "border-box effect" everywhere */
-}
-
-.body-for-sticky {
-    position: relative;
-    /* for the footer to move with the page size */
-    min-height: 100%;
-    /* for the footer to be at the bottom */
-    padding-bottom: 6rem;
-    /* Space available between last element and bottom border of the page */
-}
-
-.sticky-footer {
-    position: absolute;
-    /* for it to disappear under last body element */
-    bottom: 0;
-    /* so the footer can stick to the bottom*/
+    background-color: linear-gradient(180deg, red 0%, #f6efefe3 135.01%);
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-top:20px;
 }
 
 
-// #### Moblie View ####
+.carousel-inner {
+    //width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.carousel-item{
+    padding: 10px;
+}
+
+.icons{
+    width: 75px;
+    display: block;
+    margin: 0 auto;
+}
+
+.my-5{
+    transform: translateY(-15px);
+}
+
+.section-2{
+    background-color: $main-color;
+}
+
+.info-cards {
+    display: none;
+}
+
+
+// ## Large ##
 
 @media screen and (min-width: 992px) {
+    .main-photo{
+            position: absolute;
+                top: 87px;
+                right: 53px;
+                // right: 143px;
+    }
 
 
     .content {
 
 
+
         button {
-            transform: translateX(15%);
-            padding: 5px 30px;
+            transform: translateX(35%);
+            padding: 8px 60px;
             display: flex;
             font-family: Inter;
             font-weight: 700;
-            margin: 0;
+            margin-top: 10px;
             border-radius: 4px;
             width: auto;
         }
@@ -141,8 +150,68 @@ html {
     }
 
     .divider {
-        background-color: #F84343;
         margin-top: 0px;
+
+        p{
+            margin: 0;
+            color: white;
+        }
     }
 
+    .info{
+        transform: translate(-22vw, -10px);
+        // transform: translate(-18vw, -10px);
+        font-size: 1.5em;
+        height: 95%;
+        
+        .header{
+            letter-spacing: .05em;
+
+            .header-2{
+                margin-top: 20px;
+    
+            }
+        }
+
+        .row{
+            .sub-header{
+                font-size: 1em;
+            }
+
+        }
+        
+
+
+        .sub-header {
+            font-size: 1.3em;
+        }
+    }
+
+    .button-quote{
+        margin: 0px 60px;
+        font-size: .75em;
+    }
+
+}
+
+@media screen and (min-width: 1250px) {
+
+    .main-photo {
+            position: absolute;
+            top: 87px;
+            right: 143px;
+        }
+
+    .info {
+
+            transform: translate(-18vw, -10px);
+    }
+
+    .carousel{
+        display: none;
+    }
+
+    .info-cards{
+        display: flex;
+    }
 }
