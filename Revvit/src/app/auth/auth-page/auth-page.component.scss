@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@100;300;400&display=swap');
+
+
+$base-color: #F84343;
+$inter: "Inter";
+
+
+
+.right-side{
+  background: linear-gradient(180deg, $base-color 0%, #f6efefe3 135.01%);
+  border-radius: 9px 0px 0px 9px;
+  // width: 720px;
+  // height: 1024px;
+}
+
+.left-side{
+  background: linear-gradient(180deg, $base-color 0%, #f6efefe3 135.01%);
+  border-radius: 0px 9px 9px 0px;
+  // width: 720px;
+  // height: 1024px;
+}
+
+.login-img{
+  width: 561px;
+  height: 391px;
+  margin-bottom: -8rem;
+  margin-left: 50px;
+}
+
+.signup-img{
+  width: 561px;
+  height: 391px;
+  margin-bottom: -12rem;
+}
+
+.signup{
+  background: #F84343;
+  border-radius: 9px;
+  width: 477px;
+  height: 127px;
+  font-family: 'Inter', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: white;
+}
