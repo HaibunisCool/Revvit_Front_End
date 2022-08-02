@@ -1,0 +1,35 @@
+<div class="page column d-flex vh-100 vw-100 overflow-hidden">
+  <!-- Left Side -->
+
+  <!-- Left side toggle for logging in -->
+  <div class="left-side row-6 row d-flex justify-content-center align-items-center vw-50" *ngIf="!toggle">
+    <div class="row-6 d-flex justify-content-center text-center">
+      <img src="../../../assets/auth/login-img.svg" alt="" class="login-img">
+    </div>
+    <div class="row-6 h-50 justify-content-center d-flex">
+      <button class="btn signup" (click)="toggle= !toggle">Sign up</button>
+    </div>
+  </div>
+  <!-- Signup Comp -->
+  <div class="create acc row-6 w-50 text-center" *ngIf="toggle">
+  <app-signup></app-signup>
+  </div>
+
+  <!-- Right Side -->
+  <!-- Right-side toggle for creating account -->
+  <div class="right-side row-6 vw-50 row d-flex justify-content-center align-items-center" *ngIf="toggle">
+    <div class="row-6 d-flex justify-content-center text-center">
+      <img src="../../../assets/auth/signup-img.svg" alt="" class="signup-img">
+    </div>
+    <div class="row-6 h-50 justify-content-center d-flex">
+      <button class="btn signup" (click)="toggle= !toggle">Login</button>
+    </div>
+  </div>
+
+  <!-- Login Comp -->
+  <div class="login row-6 w-50 text-center" *ngIf="!toggle">
+  <app-login></app-login>
+
+  </div>
+
+</div>
