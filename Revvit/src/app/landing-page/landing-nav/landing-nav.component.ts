@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-nav',
@@ -7,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingNavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
   }
 
-    hamClick($event: any) {
+  hamClick($event: any) {
     let clickedElement = document.querySelector('.ham');
 
 
@@ -20,6 +21,21 @@ export class LandingNavComponent implements OnInit {
 
 
         clickedElement!.classList.toggle('active');
-      }
+  }
+
+  goToLogin(){
+    this.route.navigateByUrl("/login");
+
+  }
+
+  goToSignup(){
+    this.route.navigateByUrl("/signup");
+
+  }
+
+  goToFAQ(){
+    
+  }
+
 
 }

@@ -2,18 +2,24 @@ $main-color: #bf3100;
 
 * {
     margin: 0px;
-    padding:.2rem 0  .2rem .75rem ;
+    padding: 0;
     font-family: 'Lora', serif;
     background-color: #bf3100;
 }
 
 .logo {
-    width: 50px;
+    width: 60px;
+    padding: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
 
+ }
+
+ .links{
+    display: none;
+    position: absolute;
  }
 
 
@@ -80,4 +86,26 @@ $main-color: #bf3100;
         opacity: 1;
     }
 }
+
+@media screen and (min-width: 750px) {
+
+    .ham{
+        display: none;
+    }
+
+    .links{
+        display: contents;
+        
+        button{
+            padding: 5px 20px;
+            background-color: #4795f1;
+            border: black;
+            border-radius: 9px;
+            font-weight: 400;
+        }
+    }
+    
+
+}
+
 
