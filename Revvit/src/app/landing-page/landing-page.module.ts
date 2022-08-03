@@ -4,6 +4,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { LandingNavComponent } from './landing-nav/landing-nav.component';
 import { LandingSectionTwoComponent } from './pages/landing-page/landing-section-two/landing-section-two.component';
 import { LandingSvgComponent } from './pages/landing-page/landing-comp/landing-svg/landing-svg.component';
+import { FaqPageComponent } from './pages/faq-page/faq-page.component';
 
 
 
@@ -12,7 +13,8 @@ import { LandingSvgComponent } from './pages/landing-page/landing-comp/landing-s
     LandingPageComponent,
     LandingNavComponent,
     LandingSectionTwoComponent,
-    LandingSvgComponent
+    LandingSvgComponent,
+    FaqPageComponent
   ],
   imports: [
     CommonModule
