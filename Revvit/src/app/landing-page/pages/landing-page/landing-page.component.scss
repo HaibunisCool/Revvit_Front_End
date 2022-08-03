@@ -5,6 +5,8 @@
 
 
 // ### Variable ###
+
+
 $main-color: #F84343;
 
 .main{
@@ -14,6 +16,10 @@ $main-color: #F84343;
 app-landing-svg{
     width:100%;
     max-width: 450px;
+}
+
+app-landing-section-two{
+    background-color: black;
 }
 
 .content{
@@ -126,7 +132,7 @@ app-landing-svg{
     .info{
         // transform: translate(-22vw, -10px);
         // transform: translate(-18vw, -10px);
-        font-size: 1.5em;
+        font-size: 1.6em;
         height: 95%;
         
         .header{

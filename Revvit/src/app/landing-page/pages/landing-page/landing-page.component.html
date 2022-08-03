@@ -11,21 +11,22 @@
         </div>
 
         <div class="col-12 col-lg-7 order-lg-1 content">
-          <div class="card">
+          <div class="">
             <div class="card-container container info">
               <div class="header">
-                <h1 class="text-center header-2">
+                <h1 class=" header-2">
                   A safe space for grievances about work.
                 </h1>
               </div>
 
-              <div class="row">
+              <div class="col">
                 <div class="sub-header">
-                  <h3 class="text-center sub-header">
+                  <h3 class=" sub-header">
                     Message board for stressed out employees.
                   </h3>
                 </div>
                 <div class="call row">
+                  <div class="col-6">
                   <button
                     (click)="goToSignup()"
                     type="button"
@@ -33,11 +34,18 @@
                   >
                     Sign Up
                   </button>
-                </div>
-                <div class="row">
-                  <a class="button-quote text-center" (click)="goToLogin()"
-                    >Already have an account?</a
+                  </div>
+                
+                <div class="col-4">
+                                    <button
+                    (click)="goToLogin()"
+                    type="button"
+                    class="btn btn-lg btn-primary mx-auto"
                   >
+                    Login
+                  </button>
+</div>
+          
                 </div>
               </div>
             </div>
