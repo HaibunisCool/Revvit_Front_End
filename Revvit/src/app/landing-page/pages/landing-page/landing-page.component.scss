@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     font-family: Roboto;
 }
@@ -7,8 +7,12 @@
 // ### Variable ###
 $main-color: #F84343;
 
+.main{
+    background-color: #f6efefe3;
+}
 
-svg{
+app-landing-svg{
+    width:100%;
     max-width: 450px;
 }
 
@@ -19,16 +23,16 @@ svg{
     height: 40%;
 
     h1{
-        font-weight: 400;
+        font-weight: 1000;
         font-size: 2em;
         margin-top: 15px;
         font-family:Roboto, 'Times New Roman', Times, serif
     }
 
     .sub-header{
-        font-weight: 500;
+        font-weight: 300;
         font-size:  1em;
-        color: #C8BDBD;
+        color: black;
     }
 
     button{
@@ -75,43 +79,6 @@ svg{
     border-bottom: 0;
 }
 
-.divider{
-    background-color: linear-gradient(180deg, red 0%, #f6efefe3 135.01%);
-    padding: 30px;
-    margin-bottom: 20px;
-    margin-top:20px;
-}
-
-
-.carousel-inner {
-    //width: 50%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.carousel-item{
-    padding: 10px;
-}
-
-.icons{
-    width: 75px;
-    display: block;
-    margin: 0 auto;
-}
-
-.my-5{
-    transform: translateY(-15px);
-}
-
-.section-2{
-    background-color: $main-color;
-}
-
-.info-cards {
-    display: none;
-}
-
 
 // ## Large ##
 
@@ -129,14 +96,8 @@ svg{
 
 
         button {
-            transform: translateX(35%);
-            padding: 8px 60px;
-            display: flex;
-            font-family: Inter;
-            font-weight: 700;
-            margin-top: 10px;
             border-radius: 4px;
-            width: auto;
+            width: 75%;
         }
 
         .call {
@@ -158,8 +119,12 @@ svg{
         }
     }
 
+    .main-card {
+            transform: translate(-22vw, 15px);
+    }
+
     .info{
-        transform: translate(-22vw, -10px);
+        // transform: translate(-22vw, -10px);
         // transform: translate(-18vw, -10px);
         font-size: 1.5em;
         height: 95%;
@@ -188,9 +153,10 @@ svg{
     }
 
     .button-quote{
-        margin: 0px 60px;
+        margin: 0 0;
         font-size: .75em;
     }
+
 
 }
 
@@ -202,16 +168,8 @@ svg{
             right: 143px;
         }
 
-    .info {
-
-            transform: translate(-18vw, -10px);
+    .main-card{
+        transform: translate(-22vw, 15px);
     }
 
-    .carousel{
-        display: none;
-    }
-
-    .info-cards{
-        display: flex;
-    }
 }
