@@ -9,7 +9,10 @@ export class AuthPageComponent implements OnInit {
 
   constructor() { }
 
+  toggle: boolean = false;
+
   ngOnInit(): void {
   }
+  
 
 }
