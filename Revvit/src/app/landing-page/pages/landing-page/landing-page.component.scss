@@ -1,38 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     font-family: Roboto;
 }
 
 
 // ### Variable ###
-$main-color: linear-gradient(0deg, #F84343, #F84343),#F53A3A;
 
 
-svg{
+$main-color: #F84343;
+
+.main{
+    background-color: #f6efefe3;
+}
+
+app-landing-svg{
+    width:100%;
     max-width: 450px;
+}
+
+app-landing-section-two{
+    background-color: black;
 }
 
 .content{
     margin: auto auto;
     text-align: left;
     position: relative;
+    height: 40%;
 
     h1{
-        font-weight: 400;
+        font-weight: 1000;
         font-size: 2em;
         margin-top: 15px;
         font-family:Roboto, 'Times New Roman', Times, serif
     }
 
     .sub-header{
-        font-weight: 500;
+        font-weight: 300;
         font-size:  1em;
-        color: #C8BDBD;
+        color: black;
     }
 
     button{
         display: flex;
-        margin: 0 auto;
         background-color: #F84343;
         border-color: #F84343;
         display: block;
@@ -75,59 +85,25 @@ svg{
     border-bottom: 0;
 }
 
-.divider{
-    background-color: #F84343;
-    margin-top: 30px;
-}
 
-html {
-    height: 100%;
-    /* for the page to take full window height */
-    box-sizing: border-box;
-    /* to have the footer displayed at the bottom of the page without scrolling */
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-    /* enable the "border-box effect" everywhere */
-}
-
-.body-for-sticky {
-    position: relative;
-    /* for the footer to move with the page size */
-    min-height: 100%;
-    /* for the footer to be at the bottom */
-    padding-bottom: 6rem;
-    /* Space available between last element and bottom border of the page */
-}
-
-.sticky-footer {
-    position: absolute;
-    /* for it to disappear under last body element */
-    bottom: 0;
-    /* so the footer can stick to the bottom*/
-}
-
-
-// #### Moblie View ####
+// ## Large ##
 
 @media screen and (min-width: 992px) {
+    .main-photo{
+            position: absolute;
+                top: 87px;
+                right: 53px;
+                // right: 143px;
+    }
 
 
     .content {
 
 
+
         button {
-            transform: translateX(15%);
-            padding: 5px 30px;
-            display: flex;
-            font-family: Inter;
-            font-weight: 700;
-            margin: 0;
             border-radius: 4px;
-            width: auto;
+            width: 75%;
         }
 
         .call {
@@ -141,8 +117,65 @@ html {
     }
 
     .divider {
-        background-color: #F84343;
         margin-top: 0px;
+
+        p{
+            margin: 0;
+            color: white;
+        }
+    }
+
+    .main-card {
+            transform: translate(-22vw, 15px);
+    }
+
+    .info{
+        // transform: translate(-22vw, -10px);
+        // transform: translate(-18vw, -10px);
+        font-size: 1.6em;
+        height: 95%;
+        
+        .header{
+            letter-spacing: .05em;
+
+            .header-2{
+                margin-top: 20px;
+    
+            }
+        }
+
+        .row{
+            .sub-header{
+                font-size: 1em;
+            }
+
+        }
+        
+
+
+        .sub-header {
+            font-size: 1.3em;
+        }
+    }
+
+    .button-quote{
+        margin: 0 0;
+        font-size: .75em;
+    }
+
+
+}
+
+@media screen and (min-width: 1250px) {
+
+    .main-photo {
+            position: absolute;
+            top: 87px;
+            right: 143px;
+        }
+
+    .main-card{
+        transform: translate(-22vw, 15px);
     }
 
 }
