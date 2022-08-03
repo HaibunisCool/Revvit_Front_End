@@ -12,7 +12,7 @@ const routes: Routes = [{
 },
 {
   path: 'signup',
-  component: SignupComponent
+  component: AuthPageComponent
 },
 {
   path: 'login',
