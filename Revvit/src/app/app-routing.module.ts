@@ -7,10 +7,6 @@ import { LandingPageComponent } from './landing-page/pages/landing-page/landing-
 const routes: Routes = [{
   path: '',
   component: LandingPageComponent
-},
-{
-  path: 'faqs',
-  component: FaqPageComponent
 }];
 
 @NgModule({
