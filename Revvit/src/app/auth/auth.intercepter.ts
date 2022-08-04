@@ -15,7 +15,7 @@ export class AuthInterceptor implements HttpInterceptor {
         headers: req.headers.set("Authorization", idToken)
         .set("Access-Control-Allow-Origin", "origin-list")
       });
-      console.log(cloned);
+      return next.handle(cloned);
     }else{
       return next.handle(req)
     }
