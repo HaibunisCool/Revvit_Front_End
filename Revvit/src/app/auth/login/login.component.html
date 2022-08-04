@@ -1,1 +1,52 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <div class="login vh-100">
+        <div class="title text-center align-items-center d-flex justify-content-center">
+            <h1>Login</h1>
+        </div>
+        <form 
+        action=""
+        [formGroup]="loginForm"
+        (ngSubmit)="onSubmit()"
+        class="d-flex flex-column justify-content-center align-items-center">
+        <!--Username-->
+        <div class="control d-flex flex-column form-group">
+            <label for="username" class="align-self-start">Username: </label>
+            <input
+            [class.is-invalid]="username?.invalid && username.touched"
+            type="text"
+            formControlName="username"
+            class="form-control"/>
+            <!--Validation-->
+        </div>
+        <!--Password-->
+        <div class="control d-flex flex-column form group">
+            <label for="username" class="align-self-start"> Password:</label>
+            <input
+            [class.is-invalid]="password.invalid && password.touched"
+            type="text"
+            formControlName="password"
+            placeholder="required"
+            class="form-control"/>
+            
+            <!--Routing to Signup -->
+            <div class="container-two">
+                <div class="img">
+                    <div class="img-text">
+                        <h2>New Here?</h2>
+                        <p> Sign up and Revvit!</p>
+                        <button type="button" routerLink="/signup">Sign-Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+     </div>
+
+</html>
