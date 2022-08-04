@@ -57,15 +57,19 @@ $main-color: linear-gradient(0deg, #F84343, #F84343),#F53A3A;
     color: #F53A3A;
 }
 
+.qmark{
+    padding-bottom: 1%;
+}
+
 .submitting{
     text-align: center;
-    background-image: linear-gradient( rgb(255, 233, 233), #F84343);
+    background-color:  rgb(255, 233, 233);
 }
 .entire-form{
-    margin-bottom: 2%;
+    // margin-bottom: 2%;
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 3%;
+    padding-top: 1%;
 }
 
 .form-control{
