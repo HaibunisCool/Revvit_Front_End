@@ -3,7 +3,14 @@
 
 $base-color: #F84343;
 $inter: "Inter";
-
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 
 
 .right-side{
@@ -43,3 +50,6 @@ $inter: "Inter";
   font-weight: 700;
   color: white;
 }
+
+
+
